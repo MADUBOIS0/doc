@@ -88,6 +88,14 @@ You cannot use this Wizard to move databases between local instances of SQL Serv
 1. Follow the wizard steps.
 1. You are now ready to create the new data source in [{{ en.RDM }}](#connect-to-remote-desktop-manager) or update the [{{ en.DVLSCONSOLE }}](#connect-to-devolutions-server).
 
+###PLEASE FORMAT THIS BEFORE MERGING
+(Optional)If you are migrating a Devolutions Server data source. 
+Run the following query on the database:
+UPDATE dbo.ConnectionHistory SET Version = 0x0000000000000000;
+UPDATE dbo.DatabaseInfo SET ConnectionCacheID = NEWID(), IntelligentCacheID = NEWID();
+
+
+
 ### Connect to {{ en.RDM }}
 1. Create a new data source in ***File – Data Sources – Add a New Data Source***.
 1. On first connect, you may receive the following error message. If so, click on ***Fix It***.
