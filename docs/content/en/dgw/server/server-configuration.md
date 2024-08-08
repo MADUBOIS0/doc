@@ -25,7 +25,7 @@ To install {{ en.DGW }} on another machine than the one where {{ en.DVLS }} is h
 ## Side-by-side Installation
 
 
-This installation process is the easiest of the two and is the recommended method for simpler network layouts.
+This installation process is the easier of the two and is the recommended method for simpler network layouts.
 1. From the {{ en.DVLSCONSOLE }}, click on the ***Companions*** tab.
 ![Companions tab](https://cdnweb.devolutions.net/docs/docs_en_server_ServerOp2083.png)
 1. In the {{ en.DGW }} section, click on ***Install***.
